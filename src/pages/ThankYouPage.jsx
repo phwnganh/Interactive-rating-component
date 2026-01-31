@@ -10,7 +10,7 @@ const ThankYouPage = () => {
                     <div className={"flex justify-center items-center"}>
                         <img src={IllustrationThankYou} alt={"illustration-thankYou"}/>
                     </div>
-                    <div className={"rounded-3xl py-1.5 px-4  bg-grey-900 flex justify-center items-center"}>
+                    <div className={"rounded-3xl py-1.5 px-4  bg-grey-900 max-w-48.25 mx-auto flex justify-center items-center"}>
                         <p className={"text-orange-500 text-preset-5 sm:text-preset-4 leading-preset-5-regular sm:leading-preset-4-regular"}>You selected {location.state} out of 5</p>
                     </div>
                     <div className={"flex flex-col gap-4 text-center"}>
