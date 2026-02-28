@@ -30,7 +30,7 @@ const MainPage = () => {
                             improve our offering!</p>
                         <div className={"flex items-center gap-4 sm:gap-6"}>
                             {[1, 2, 3, 4, 5].map((item) => (
-                                <button type={"button"} aria-label="Rate 1 out of 5"
+                                <button type={"button"} aria-label={`Rate ${selectedRating} out of 5`}
                                         onClick={() => handleSelectedRating(item)}
                                         className={`flex justify-center items-center bg-grey-900 rounded-3xl w-10.5 h-10.5 sm:w-13 sm:h-13 group hover:bg-white ${(selectedRating === item) ? "bg-orange-500" : ""}`}>
                                     <p className={`text-grey-500 text-preset-5 sm:text-preset-3 font-preset-5-bold sm:font-preset-3 leading-preset-5-bold sm:leading-preset-3 tracking-preset-5-bold sm:tracking-preset-3 group-hover:text-grey-900 ${(selectedRating === item) ? "text-grey-900" : ""}`}>{item}</p>
